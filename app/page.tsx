@@ -25,8 +25,8 @@ const focusItems = [
 const numbers = [
   { label: "M€ Invertidos", value: "15" },
   { label: "Empresas Financiadas", value: "400" },
-  { label: "Clubes Creados y Gestionados", value: "6" },
-  { label: "Años de Experiencia gestionando clubes de inversión", value: "12" }
+  { label: "Clubes Creados y Llevados", value: "6" },
+  { label: "Años de Experiencia en la llevanza de clubes de inversión", value: "12" }
 ];
 
 const news = [
@@ -190,9 +190,9 @@ export default function HomePage() {
                 impacto económico y social de cada uno de ellos.
               </p>
               <p className="mt-4 text-sm text-sand/80">
-                Prestamos servicios administrativos especializados para todas las fases
-                del ciclo de vida de los clubs de inversión, desde su constitución hasta
-                su liquidación, pasando por las fases de inversión y desinversión.
+                Llevanza profesionalizada del club para todas las fases del ciclo de
+                vida de los clubs de inversión, desde su constitución hasta su
+                liquidación, pasando por las fases de inversión y desinversión.
               </p>
             </div>
           </div>
@@ -209,9 +209,9 @@ export default function HomePage() {
               impacto económico y social de cada uno de ellos.
             </p>
             <p className="text-ink/70">
-              Prestamos servicios administrativos especializados para todas las fases
-              del ciclo de vida de los clubs de inversión, desde su constitución hasta
-              su liquidación, pasando por las fases de inversión y desinversión.
+              Llevanza profesionalizada del club para todas las fases del ciclo de vida
+              de los clubs de inversión, desde su constitución hasta su liquidación,
+              pasando por las fases de inversión y desinversión.
             </p>
             <p className="text-ink/70">Prestamos servicios profesionales especializados para:</p>
           </div>
@@ -235,7 +235,7 @@ export default function HomePage() {
             <h2 className="text-3xl font-semibold text-ink">Cómo lo hacemos</h2>
             <p className="text-ink/70">
               Compartimos el talento de nuestro equipo de especialistas entre los
-              diferentes clubs que gestionamos, garantizando la confidencialidad y
+              diferentes clubs que llevamos, garantizando la confidencialidad y
               evitando el conflicto de interés entre ellos. Seguimos con rigor procesos
               eficientes que se encuentran operativos en múltiples clubs de inversión
               exitosos.
@@ -272,9 +272,9 @@ export default function HomePage() {
             <h2 className="text-3xl font-semibold text-ink">Sobre nosotros</h2>
             <p className="text-ink/70">
               Contamos con una dilatada trayectoria en la inversión, acompañamiento de
-              startups y en la gestión de clubs de business angels. Estamos expuestos de
+              startups y en la llevanza de clubs de business angels. Estamos expuestos de
               forma directa o indirecta a través de vehículos de inversión a más de 400
-              inversiones y hemos gestionado múltiples proyectos de base tecnológica.
+              inversiones y hemos llevado múltiples proyectos de base tecnológica.
             </p>
             <p className="text-ink/70">
               La combinación de experiencia, presencia en el ecosistema, procesos,
@@ -286,7 +286,9 @@ export default function HomePage() {
           </div>
           <div className="rounded-3xl bg-ink p-8 text-sand shadow-soft">
             <h3 className="text-xl font-semibold text-sand">¿Qué nos avala?</h3>
-            <p className="mt-3 text-sand/80">Nuestra experiencia en la gestión de clubs de inversión:</p>
+            <p className="mt-3 text-sand/80">
+              Nuestra experiencia en la llevanza de clubs de inversión:
+            </p>
             <a
               className="mt-6 inline-flex rounded-full border border-sand/40 px-5 py-2 text-sm font-semibold text-sand transition hover:border-sand/80"
               href="/equipo"
