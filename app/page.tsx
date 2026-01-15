@@ -171,7 +171,7 @@ export default function HomePage() {
               {numbers.map((item) => (
                 <div
                   key={item.label}
-                  className="rounded-2xl bg-white/70 p-4 shadow-card transition hover:-translate-y-1 hover:shadow-soft"
+                  className="glass-card rounded-2xl p-4 shadow-card transition hover:-translate-y-1 hover:shadow-soft"
                 >
                   <p className="text-2xl font-semibold text-ink">{item.value}</p>
                   <p className="text-xs uppercase tracking-wide text-ink/60">
@@ -219,7 +219,7 @@ export default function HomePage() {
             {focusItems.map((item) => (
               <div
                 key={item.title}
-                className="rounded-2xl bg-sand p-6 shadow-card transition hover:-translate-y-1 hover:shadow-soft"
+                className="glass-card rounded-2xl p-6 shadow-card transition hover:-translate-y-1 hover:shadow-soft"
               >
                 <h3 className="text-lg font-semibold text-ink">{item.title}</h3>
                 <p className="mt-3 text-sm text-ink/70">{item.description}</p>
@@ -334,7 +334,7 @@ export default function HomePage() {
             {numbers.map((item) => (
               <div
                 key={item.label}
-                className="rounded-2xl bg-white/10 p-6 shadow-card transition hover:-translate-y-1"
+                className="glass-card rounded-2xl p-6 shadow-card transition hover:-translate-y-1"
               >
                 <p className="text-3xl font-semibold text-sand">{item.value}</p>
                 <p className="mt-2 text-sm text-sand/80">{item.label}</p>

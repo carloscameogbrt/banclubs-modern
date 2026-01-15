@@ -41,7 +41,7 @@ export default function ContactForm() {
   };
 
   return (
-    <form className="rounded-3xl bg-white p-8 shadow-card" onSubmit={handleSubmit}>
+    <form className="glass-card rounded-3xl p-8 shadow-card" onSubmit={handleSubmit}>
       <div className="grid gap-4 sm:grid-cols-2">
         <label className="text-sm font-medium text-ink">
           Nombre
