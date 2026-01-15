@@ -195,10 +195,12 @@ export default function HomePage() {
           <div className="glass-card rounded-3xl p-6 shadow-soft float-slow">
             <div className="rounded-2xl bg-ink p-6 text-sand">
               <p className="text-sm uppercase tracking-[0.25em] text-sand/70">Te ayudamos</p>
-              <h2 className="mt-4 text-3xl font-semibold">Llevanza profesionalizada del club</h2>
+              <h2 className="mt-4 text-3xl font-semibold">
+                Llevanza profesionalizada de clubs de inversión en startups
+              </h2>
               <p className="mt-4 text-sm text-sand/80">
-                Desde la constitución hasta la liquidación del club, con procesos adaptados
-                a su modelo de funcionamiento.
+                Desde la constitución hasta la última desinversión, con procesos adaptados a
+                su modelo de funcionamiento.
               </p>
             </div>
             <div className="mt-6 space-y-4 text-sm text-ink/70">
@@ -208,11 +210,11 @@ export default function HomePage() {
               </div>
               <div className="flex items-start gap-3">
                 <span className="mt-1 h-2 w-2 rounded-full bg-gold" />
-                <p>Plataforma tecnológica para minimizar errores y costes.</p>
+                <p>Plataforma tecnológica para maximizar retornos y minimizar costes.</p>
               </div>
               <div className="flex items-start gap-3">
                 <span className="mt-1 h-2 w-2 rounded-full bg-gold" />
-                <p>Equipo compartido con confidencialidad y cero conflictos.</p>
+                <p>Equipo profesional con años de experiencia.</p>
               </div>
             </div>
           </div>
