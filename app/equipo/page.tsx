@@ -96,13 +96,13 @@ export default function EquipoPage() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <div className="h-64 w-full bg-sand">
+                <div className="aspect-[4/5] w-full bg-sand">
                   <Image
                     src={member.image}
                     alt={member.name}
                     width={480}
                     height={360}
-                    className="h-full w-full object-contain"
+                    className="h-full w-full object-cover"
                   />
                 </div>
                 <div className="p-6">

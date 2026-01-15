@@ -220,7 +220,7 @@ export default function PoliticaPrivacidadPage() {
               cualquier momento y sin coste alguno. El usuario podrá manifestar dicha
               oposición clicando en el enlace establecido para darse de baja de las
               comunicaciones comerciales o dirigiendo un e-mail a la siguiente dirección
-              de correo electrónico: contacto@cirqelap-cp88.wordpresstemporal.com
+              de correo electrónico: partners@banclubs.com
             </p>
             <p>
               Asimismo, en el caso de que el Usuario prestase su consentimiento para que
@@ -229,7 +229,7 @@ export default function PoliticaPrivacidadPage() {
               debidamente informado de dicho tratamiento, estado el propio Usuario
               facultado para revocar dicho consentimiento contactando con BANCLUBS a
               través del siguiente correo electrónico:
-              contacto@cirqelap-cp88.wordpresstemporal.com
+              partners@banclubs.com
             </p>
           </div>
 
@@ -291,7 +291,7 @@ export default function PoliticaPrivacidadPage() {
               El Usuario puede enviar un escrito a BANCLUBS, a la dirección indicada en
               el encabezado de la presente Política de Privacidad, o bien por medio de
               un correo electrónico a la dirección:
-              contacto@cirqelap-cp88.wordpresstemporal.com adjuntando fotocopia de su
+              partners@banclubs.com adjuntando fotocopia de su
               documento de identidad, en cualquier momento y de manera gratuita, para:
             </p>
             <ul className="list-disc space-y-2 pl-5">

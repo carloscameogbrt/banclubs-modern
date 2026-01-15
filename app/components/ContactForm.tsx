@@ -49,6 +49,7 @@ export default function ContactForm() {
             className="mt-2 w-full rounded-xl border border-ink/10 px-4 py-3 text-sm"
             type="text"
             name="nombre"
+            placeholder="Tu nombre"
             required
           />
         </label>
@@ -58,6 +59,7 @@ export default function ContactForm() {
             className="mt-2 w-full rounded-xl border border-ink/10 px-4 py-3 text-sm"
             type="text"
             name="empresa"
+            placeholder="Nombre de la empresa"
           />
         </label>
         <label className="text-sm font-medium text-ink sm:col-span-2">
@@ -66,6 +68,7 @@ export default function ContactForm() {
             className="mt-2 w-full rounded-xl border border-ink/10 px-4 py-3 text-sm"
             type="email"
             name="email"
+            placeholder="correo@empresa.com"
             required
           />
         </label>
@@ -74,6 +77,7 @@ export default function ContactForm() {
           <textarea
             className="mt-2 h-28 w-full rounded-xl border border-ink/10 px-4 py-3 text-sm"
             name="mensaje"
+            placeholder="Cuéntanos sobre tu proyecto"
             required
           />
         </label>

@@ -145,7 +145,7 @@ export default function PoliticaCookiesPage() {
               el “Sitio Web”), propiedad de BANCLUBS, S.L. (en adelante, “BANCLUBS”), con
               NIF B19918093, con domicilio social en CALLE SOROLLA, 53 – BJ B, 28222,
               MAJADAHONDA, MADRID, y correo electrónico a efectos de privacidad:
-              contacto@cirqelap-cp88.wordpresstemporal.com
+              partners@banclubs.com
             </p>
             <p>
               El acceso y la navegación en el Sitio Web, así como la aceptación del

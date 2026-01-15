@@ -55,7 +55,7 @@ export default function AvisoLegalPage() {
                 MADRID, ESPAÑA
               </li>
               <li>• NIF: B19918093</li>
-              <li>• Contacto: contacto@cirqelap-cp88.wordpresstemporal.com</li>
+              <li>• Contacto: partners@banclubs.com</li>
             </ul>
           </div>
 
@@ -216,7 +216,7 @@ export default function AvisoLegalPage() {
               Los usuarios podrán acceder al servicio de atención al cliente a través
               del siguiente e-mail de contacto:
             </p>
-            <p>E-mail: contacto@cirqelap-cp88.wordpresstemporal.com</p>
+            <p>E-mail: partners@banclubs.com</p>
             <p>
               BANCLUBS dará respuesta a las reclamaciones o consultas en el plazo más
               breve posible y, en cualquier caso, en un plazo máximo de un (1) mes.

@@ -11,7 +11,7 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: "BAnCLUBS | Crea un Club de Business Angels",
   description:
-    "Servicios especializados para la creación y gestión de clubs de inversión en startups.",
+    "Servicios especializados para la creación y llevanza de clubs de inversión en startups.",
   icons: {
     icon: "/favicon.png"
   }
