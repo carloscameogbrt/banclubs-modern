@@ -1,4 +1,8 @@
 import Image from "next/image";
+import ContactForm from "./components/ContactForm";
+import CookieBanner from "./components/CookieBanner";
+import SiteFooter from "./components/SiteFooter";
+import SiteHeader from "./components/SiteHeader";
 
 const focusItems = [
   {
@@ -143,46 +147,7 @@ const partners = [
 export default function HomePage() {
   return (
     <main>
-      <header className="border-b border-ink/10 bg-sand/80 backdrop-blur">
-        <div className="container-wide flex items-center justify-between py-5">
-          <div className="flex items-center gap-4">
-            <Image
-              src="/banclubs-logo.png"
-              alt="BAnCLUBS"
-              width={220}
-              height={56}
-              className="h-12 w-auto"
-              priority
-            />
-          </div>
-          <nav className="hidden items-center gap-6 text-sm font-medium text-ink/70 lg:flex">
-            <a className="hover:text-ink" href="#inicio">
-              Inicio
-            </a>
-            <a className="hover:text-ink" href="#que-hacemos">
-              Qué hacemos
-            </a>
-            <a className="hover:text-ink" href="#sobre-nosotros">
-              Sobre nosotros
-            </a>
-            <a className="hover:text-ink" href="#partners">
-              Partners
-            </a>
-            <a className="hover:text-ink" href="#noticias">
-              Noticias
-            </a>
-            <a className="hover:text-ink" href="#contacto">
-              Contacto
-            </a>
-          </nav>
-          <a
-            className="hidden rounded-full border border-ink/20 px-4 py-2 text-sm font-semibold text-ink transition hover:border-ink/40 lg:inline-flex"
-            href="#contacto"
-          >
-            Agenda una llamada
-          </a>
-        </div>
-      </header>
+      <SiteHeader />
 
       <section id="inicio" className="section hero-surface relative overflow-hidden">
         <div className="animated-orb h-48 w-48 bg-gold/40 -left-10 top-6" />
@@ -552,97 +517,13 @@ export default function HomePage() {
               </a>
             </div>
           </div>
-          <form className="rounded-3xl bg-white p-8 shadow-card">
-            <div className="grid gap-4 sm:grid-cols-2">
-              <label className="text-sm font-medium text-ink">
-                Nombre
-                <input
-                  className="mt-2 w-full rounded-xl border border-ink/10 px-4 py-3 text-sm"
-                  type="text"
-                  name="nombre"
-                  placeholder="Tu nombre"
-                />
-              </label>
-              <label className="text-sm font-medium text-ink">
-                Empresa
-                <input
-                  className="mt-2 w-full rounded-xl border border-ink/10 px-4 py-3 text-sm"
-                  type="text"
-                  name="empresa"
-                  placeholder="Nombre de la empresa"
-                />
-              </label>
-              <label className="text-sm font-medium text-ink sm:col-span-2">
-                Dirección de correo electrónico
-                <input
-                  className="mt-2 w-full rounded-xl border border-ink/10 px-4 py-3 text-sm"
-                  type="email"
-                  name="email"
-                  placeholder="correo@empresa.com"
-                />
-              </label>
-              <label className="text-sm font-medium text-ink sm:col-span-2">
-                Mensaje
-                <textarea
-                  className="mt-2 h-28 w-full rounded-xl border border-ink/10 px-4 py-3 text-sm"
-                  name="mensaje"
-                  placeholder="Cuéntanos sobre tu proyecto"
-                />
-              </label>
-            </div>
-            <div className="mt-5 space-y-3 text-xs text-ink/70">
-              <label className="flex items-center gap-2">
-                <input type="checkbox" className="h-4 w-4" />
-                He leído y acepto la Política de Privacidad.
-              </label>
-              <label className="flex items-center gap-2">
-                <input type="checkbox" className="h-4 w-4" />
-                Deseo recibir comunicaciones comerciales sobre servicios de BANCLUBS.
-              </label>
-            </div>
-            <div className="mt-6 flex items-center justify-between">
-              <span className="text-xs text-ink/60">6 + 4 =</span>
-              <button
-                className="rounded-full bg-ink px-6 py-3 text-sm font-semibold text-sand transition hover:bg-ink/90"
-                type="submit"
-              >
-                Enviar
-              </button>
-            </div>
-          </form>
+          <ContactForm />
         </div>
       </section>
 
-      <footer className="border-t border-ink/10 bg-sand/80">
-        <div className="container-wide flex flex-col gap-6 py-8 md:flex-row md:items-center md:justify-between">
-          <div>
-            <p className="text-sm font-semibold text-ink">BAnCLUBS</p>
-            <p className="text-xs text-ink/60">
-              Aviso Legal · Política Privacidad · Cookies
-            </p>
-          </div>
-          <p className="text-xs text-ink/60">
-            ©2025 Todos los derechos reservados. Desarrollado por BAnCLUBS
-          </p>
-        </div>
-      </footer>
+      <SiteFooter />
 
-      <div className="fixed bottom-6 left-1/2 z-50 w-[92%] max-w-3xl -translate-x-1/2 rounded-2xl border border-ink/10 bg-white/90 p-4 shadow-soft backdrop-blur">
-        <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-          <p className="text-xs text-ink/70">
-            Utilizamos cookies para ofrecerte la mejor experiencia en nuestra web.
-            Puedes conocer más sobre qué cookies utilizamos en la Política de Cookies.
-          </p>
-          <div className="flex gap-2">
-            <button className="rounded-full border border-ink/20 px-4 py-2 text-xs font-semibold text-ink">
-              Cerrar
-            </button>
-            <button className="rounded-full bg-ink px-4 py-2 text-xs font-semibold text-sand">
-              Aceptar
-            </button>
-          </div>
-        </div>
-      </div>
+      <CookieBanner />
     </main>
   );
 }
