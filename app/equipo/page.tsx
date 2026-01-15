@@ -6,27 +6,32 @@ const founders = [
   {
     name: "Nacho Alonso",
     role: "Cofundador y Presidente",
-    image: "/team/nacho-alonso.png"
+    image: "/team/nacho-alonso.png",
+    linkedin: "https://es.linkedin.com/in/nacho-alonso-cembrano-37309b4"
   },
   {
     name: "Guillermo Soto",
     role: "Cofundador",
-    image: "/team/guillermo-soto.png"
+    image: "/team/guillermo-soto.png",
+    linkedin: "https://es.linkedin.com/in/guillermosotougalde"
   },
   {
     name: "Andrea Alonso-Bernaola",
     role: "CEO",
-    image: "/team/andrea-alonso.png"
+    image: "/team/andrea-alonso.png",
+    linkedin: "https://es.linkedin.com/in/andrea-daniel-alonso-bernaola-ruiz-5a1a76176"
   },
   {
     name: "Alejandro Soto",
     role: "CFO/Analista de Inversiones",
-    image: "/team/alejandro-soto.png"
+    image: "/team/alejandro-soto.png",
+    linkedin: "https://es.linkedin.com/in/ccameo"
   },
   {
     name: "Carlos Cameo",
     role: "CTO/Consejero de Tecnología",
-    image: "/team/carlos-cameo.png"
+    image: "/team/carlos-cameo.png",
+    linkedin: "https://es.linkedin.com/in/ccameo"
   }
 ];
 
@@ -64,7 +69,7 @@ export default function EquipoPage() {
             </p>
           </div>
           <div className="rounded-3xl bg-ink p-8 text-sand shadow-soft">
-            <p className="eyebrow text-sand/70">Valores</p>
+            <h3 className="text-xl font-semibold text-sand">Valores</h3>
             <ul className="mt-6 space-y-3 text-sm text-sand/80">
               {values.map((value) => (
                 <li key={value} className="flex items-center gap-3">
@@ -84,9 +89,12 @@ export default function EquipoPage() {
           </div>
           <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {founders.map((member) => (
-              <div
+              <a
                 key={member.name}
                 className="overflow-hidden rounded-2xl bg-white shadow-card transition hover:-translate-y-1"
+                href={member.linkedin}
+                target="_blank"
+                rel="noreferrer"
               >
                 <div className="h-56 w-full bg-sand">
                   <Image
@@ -94,14 +102,14 @@ export default function EquipoPage() {
                     alt={member.name}
                     width={480}
                     height={360}
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover object-top"
                   />
                 </div>
                 <div className="p-6">
                   <p className="text-lg font-semibold text-ink">{member.name}</p>
                   <p className="mt-2 text-sm text-ink/70">{member.role}</p>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
@@ -119,7 +127,7 @@ export default function EquipoPage() {
           </div>
           <div className="rounded-3xl border border-ink/10 bg-white p-8 shadow-card">
             <p className="text-sm font-semibold text-ink">Contáctanos</p>
-            <p className="mt-2 text-sm text-ink/70">contacto@banclubs.com</p>
+            <p className="mt-2 text-sm text-ink/70">partners@banclubs.com</p>
             <p className="mt-4 text-sm font-semibold text-ink">Síguenos</p>
             <a
               className="mt-2 block text-sm text-ink/70"
