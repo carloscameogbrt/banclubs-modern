@@ -131,11 +131,7 @@ export default function PoliticaCookiesPage() {
 
       <section className="section hero-surface">
         <div className="container-wide space-y-4">
-          <p className="eyebrow">Textos legales</p>
-          <h1 className="text-4xl font-semibold text-ink md:text-5xl">Política de cookies</h1>
-          <p className="text-ink/70">
-            Información sobre el uso de cookies en el sitio web de BAnCLUBS.
-          </p>
+          <h1 className="text-4xl font-semibold text-ink md:text-5xl">POLÍTICA DE COOKIES</h1>
         </div>
       </section>
 

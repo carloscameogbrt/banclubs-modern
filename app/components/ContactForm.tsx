@@ -6,12 +6,10 @@ type FormState = "idle" | "sending" | "success" | "error";
 
 export default function ContactForm() {
   const [status, setStatus] = useState<FormState>("idle");
-  const [error, setError] = useState<string | null>(null);
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setStatus("sending");
-    setError(null);
 
     const formData = new FormData(event.currentTarget);
     const payload = {
@@ -39,7 +37,6 @@ export default function ContactForm() {
       setStatus("success");
     } catch (err) {
       setStatus("error");
-      setError(err instanceof Error ? err.message : "No se pudo enviar el mensaje.");
     }
   };
 
@@ -52,7 +49,6 @@ export default function ContactForm() {
             className="mt-2 w-full rounded-xl border border-ink/10 px-4 py-3 text-sm"
             type="text"
             name="nombre"
-            placeholder="Tu nombre"
             required
           />
         </label>
@@ -62,7 +58,6 @@ export default function ContactForm() {
             className="mt-2 w-full rounded-xl border border-ink/10 px-4 py-3 text-sm"
             type="text"
             name="empresa"
-            placeholder="Nombre de la empresa"
           />
         </label>
         <label className="text-sm font-medium text-ink sm:col-span-2">
@@ -71,7 +66,6 @@ export default function ContactForm() {
             className="mt-2 w-full rounded-xl border border-ink/10 px-4 py-3 text-sm"
             type="email"
             name="email"
-            placeholder="correo@empresa.com"
             required
           />
         </label>
@@ -80,7 +74,6 @@ export default function ContactForm() {
           <textarea
             className="mt-2 h-28 w-full rounded-xl border border-ink/10 px-4 py-3 text-sm"
             name="mensaje"
-            placeholder="Cuéntanos sobre tu proyecto"
             required
           />
         </label>
@@ -106,12 +99,10 @@ export default function ContactForm() {
         </button>
       </div>
       {status === "success" ? (
-        <p className="mt-4 text-xs font-semibold text-teal">
-          ¡Gracias! Hemos recibido tu mensaje.
-        </p>
+        <div className="mt-4" />
       ) : null}
       {status === "error" ? (
-        <p className="mt-4 text-xs font-semibold text-red-600">{error}</p>
+        <div className="mt-4" />
       ) : null}
     </form>
   );

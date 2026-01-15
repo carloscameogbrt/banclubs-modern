@@ -8,25 +8,25 @@ const focusItems = [
   {
     title: "Divulgar la inversión en startups",
     description:
-      "Impulsamos los clubs como un complemento diversificador en las carteras de los ahorradores privados."
+      "a través de clubs de inversión como complemento diversificador en las carteras de los ahorradores privados."
   },
   {
-    title: "Formar en técnicas y herramientas",
+    title: "Formar en técnicas y herramientas especializadas",
     description:
-      "Transferimos metodologías profesionales para analizar, invertir y acompañar proyectos."
+      "de aplicación en los procesos de inversión que siguen los inversores profesionales."
   },
   {
-    title: "Crear y gestionar clubs de inversión",
+    title: "Crear y llevar los procesos administrativos de clubs de inversión",
     description:
-      "Procesos eficientes compatibles con portfolio único, pledge fund, SPV u otros modelos."
+      "de una forma eficiente y compatible con sus diferentes modelos de funcionamiento (portfolio único, pledge fund, SPV…)."
   }
 ];
 
 const numbers = [
-  { label: "M€ invertidos", value: "15" },
-  { label: "Empresas financiadas", value: "400" },
-  { label: "Clubes creados y gestionados", value: "6" },
-  { label: "Años de experiencia", value: "12" }
+  { label: "M€ Invertidos", value: "15" },
+  { label: "Empresas Financiadas", value: "400" },
+  { label: "Clubes Creados y Gestionados", value: "6" },
+  { label: "Años de Experiencia gestionando clubes de inversión", value: "12" }
 ];
 
 const news = [
@@ -155,28 +155,16 @@ export default function HomePage() {
         <div className="animated-orb slow h-40 w-40 bg-ink/10 left-1/2 bottom-10" />
         <div className="container-wide relative grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div className="space-y-6">
-            <p className="eyebrow">Impulsa la innovación en tu territorio</p>
             <h1 className="text-4xl font-semibold leading-tight text-ink md:text-5xl">
-              Crea un Club de Business Angels con un equipo experto y procesos
-              sólidos
+              Impulsa la innovación en tu territorio creando un Club de Business Angels
+              con nosotros
             </h1>
-            <p className="text-lg text-ink/70">
-              Optimizamos los procesos administrativos de los clubs de inversión en
-              startups para mitigar riesgos, maximizar retornos y potenciar el
-              impacto económico y social.
-            </p>
             <div className="flex flex-wrap gap-4">
               <a
                 className="rounded-full bg-ink px-6 py-3 text-sm font-semibold text-sand transition hover:bg-ink/90"
                 href="#contacto"
               >
-                Quiero más información
-              </a>
-              <a
-                className="rounded-full border border-ink/20 px-6 py-3 text-sm font-semibold text-ink transition hover:border-ink/40"
-                href="#que-hacemos"
-              >
-                Conoce nuestro trabajo
+                Te ayudamos
               </a>
             </div>
             <div className="grid gap-6 sm:grid-cols-3">
@@ -195,30 +183,17 @@ export default function HomePage() {
           </div>
           <div className="glass-card rounded-3xl p-6 shadow-soft float-slow">
             <div className="rounded-2xl bg-ink p-6 text-sand">
-              <p className="text-sm uppercase tracking-[0.25em] text-sand/70">
-                Te ayudamos
-              </p>
-              <h2 className="mt-4 text-3xl font-semibold">
-                Servicios administrativos especializados
-              </h2>
+              <p className="text-sm uppercase tracking-[0.25em] text-sand/70">Qué hacemos</p>
               <p className="mt-4 text-sm text-sand/80">
-                Desde la constitución hasta la liquidación del club, con procesos
-                adaptados a su modelo de funcionamiento.
+                Optimizamos los procesos administrativos de los clubs de inversión en
+                startups para mitigar sus riesgos y maximizar sus retornos, así como el
+                impacto económico y social de cada uno de ellos.
               </p>
-            </div>
-            <div className="mt-6 space-y-4 text-sm text-ink/70">
-              <div className="flex items-start gap-3">
-                <span className="mt-1 h-2 w-2 rounded-full bg-gold" />
-                <p>Gestión completa del ciclo de inversión y desinversión.</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="mt-1 h-2 w-2 rounded-full bg-gold" />
-                <p>Plataforma tecnológica para minimizar errores y costes.</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="mt-1 h-2 w-2 rounded-full bg-gold" />
-                <p>Equipo compartido con confidencialidad y cero conflictos.</p>
-              </div>
+              <p className="mt-4 text-sm text-sand/80">
+                Prestamos servicios administrativos especializados para todas las fases
+                del ciclo de vida de los clubs de inversión, desde su constitución hasta
+                su liquidación, pasando por las fases de inversión y desinversión.
+              </p>
             </div>
           </div>
         </div>
@@ -227,19 +202,18 @@ export default function HomePage() {
       <section id="que-hacemos" className="section bg-white/60 pattern-surface">
         <div className="container-wide grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="space-y-4">
-            <p className="eyebrow">Qué hacemos</p>
-            <h2 className="text-3xl font-semibold text-ink">
-              Optimizamos la gestión de clubs de inversión en startups
-            </h2>
+            <h2 className="text-3xl font-semibold text-ink">Qué hacemos</h2>
+            <p className="text-ink/70">
+              Optimizamos los procesos administrativos de los clubs de inversión en
+              startups para mitigar sus riesgos y maximizar sus retornos, así como el
+              impacto económico y social de cada uno de ellos.
+            </p>
             <p className="text-ink/70">
               Prestamos servicios administrativos especializados para todas las fases
-              del ciclo de vida de los clubs, desde su constitución hasta su
-              liquidación.
+              del ciclo de vida de los clubs de inversión, desde su constitución hasta
+              su liquidación, pasando por las fases de inversión y desinversión.
             </p>
-            <p className="text-ink/70">
-              Nuestro objetivo es mitigar riesgos, maximizar retornos y asegurar un
-              impacto económico y social medible en cada territorio.
-            </p>
+            <p className="text-ink/70">Prestamos servicios profesionales especializados para:</p>
           </div>
           <div className="grid gap-6 sm:grid-cols-3">
             {focusItems.map((item) => (
@@ -258,19 +232,19 @@ export default function HomePage() {
       <section className="section">
         <div className="container-wide grid gap-12 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="space-y-6">
-            <p className="eyebrow">Cómo lo hacemos</p>
-            <h2 className="text-3xl font-semibold text-ink">
-              Talento compartido, procesos eficientes y tecnología propia
-            </h2>
+            <h2 className="text-3xl font-semibold text-ink">Cómo lo hacemos</h2>
             <p className="text-ink/70">
               Compartimos el talento de nuestro equipo de especialistas entre los
               diferentes clubs que gestionamos, garantizando la confidencialidad y
-              evitando conflictos de interés.
+              evitando el conflicto de interés entre ellos. Seguimos con rigor procesos
+              eficientes que se encuentran operativos en múltiples clubs de inversión
+              exitosos.
             </p>
             <p className="text-ink/70">
-              Seguimos con rigor procesos eficientes probados en múltiples clubs de
-              inversión exitosos y apoyados por una plataforma tecnológica que reduce
-              costes y errores.
+              Contamos con una plataforma tecnológica que permite abaratar costes,
+              minimizar errores y controlar la correcta ejecución de los procesos clave.
+              Aplicamos la experiencia adquirida por los fundadores de BAnCLUBS en la
+              creación y llevanza de 6 clubs de inversión desde 2013.
             </p>
           </div>
           <div className="rounded-3xl border border-ink/10 bg-white p-8 shadow-soft transition hover:-translate-y-1">
@@ -295,27 +269,24 @@ export default function HomePage() {
       <section id="sobre-nosotros" className="section pattern-surface">
         <div className="container-wide grid gap-10 lg:grid-cols-[1fr_1fr]">
           <div className="space-y-4">
-            <p className="eyebrow">Sobre nosotros</p>
-            <h2 className="text-3xl font-semibold text-ink">
-              Experiencia real en inversión, acompañamiento y gestión de clubs
-            </h2>
+            <h2 className="text-3xl font-semibold text-ink">Sobre nosotros</h2>
             <p className="text-ink/70">
-              Contamos con una dilatada trayectoria en la inversión y acompañamiento
-              de startups, y en la gestión de clubs de business angels.
+              Contamos con una dilatada trayectoria en la inversión, acompañamiento de
+              startups y en la gestión de clubs de business angels. Estamos expuestos de
+              forma directa o indirecta a través de vehículos de inversión a más de 400
+              inversiones y hemos gestionado múltiples proyectos de base tecnológica.
             </p>
             <p className="text-ink/70">
-              Estamos expuestos directa o indirectamente a más de 400 inversiones y
-              hemos gestionado múltiples proyectos de base tecnológica.
+              La combinación de experiencia, presencia en el ecosistema, procesos,
+              tecnología y conocimiento financiero asegura nuestra capacidad de entregar
+              servicios de calidad y de responder a la ambición de convertirnos en un
+              agente dinamizador y de referencia dentro del ecosistema
+              emprendedor-inversor nacional.
             </p>
           </div>
           <div className="rounded-3xl bg-ink p-8 text-sand shadow-soft">
             <h3 className="text-xl font-semibold text-sand">¿Qué nos avala?</h3>
-            <p className="mt-3 text-sand/80">
-              La combinación de experiencia, presencia en el ecosistema, procesos,
-              tecnología y conocimiento financiero nos permite entregar servicios de
-              calidad y responder a la ambición de convertirnos en un agente
-              dinamizador del ecosistema emprendedor-inversor nacional.
-            </p>
+            <p className="mt-3 text-sand/80">Nuestra experiencia en la gestión de clubs de inversión:</p>
             <a
               className="mt-6 inline-flex rounded-full border border-sand/40 px-5 py-2 text-sm font-semibold text-sand transition hover:border-sand/80"
               href="/equipo"
@@ -349,12 +320,11 @@ export default function HomePage() {
         <div className="container-wide">
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div className="space-y-3">
-              <p className="eyebrow text-sand/70">Nuestros números</p>
-              <h2 className="text-3xl font-semibold text-sand">
-                Resultados por encima de la media
-              </h2>
+              <h2 className="text-3xl font-semibold text-sand">Nuestros números</h2>
               <p className="text-sand/80">
-                Una trayectoria sólida con impacto en el ecosistema emprendedor.
+                A lo largo de nuestra dilatada carrera en el mundo del emprendimiento,
+                hemos atesorado, no solo una experiencia incalculable, sino unos
+                resultados por encima de la media.
               </p>
             </div>
           </div>
@@ -375,14 +345,7 @@ export default function HomePage() {
       <section className="section bg-white/60">
         <div className="container-wide grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="space-y-4">
-            <p className="eyebrow">Inversiones</p>
-            <h2 className="text-3xl font-semibold text-ink">
-              Algunas de nuestras inversiones
-            </h2>
-            <p className="text-ink/70">
-              Diversificamos por sectores, etapas y geografías para construir carteras
-              resilientes y con potencial de retorno.
-            </p>
+            <h2 className="text-3xl font-semibold text-ink">Algunas de nuestras inversiones</h2>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             {investments.map((item) => (
@@ -400,7 +363,6 @@ export default function HomePage() {
                   height={64}
                   className="h-9 w-auto object-contain"
                 />
-                <span className="text-xs text-ink/60">Ver más</span>
               </a>
             ))}
           </div>
@@ -413,15 +375,10 @@ export default function HomePage() {
         <div className="container-wide relative">
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div className="space-y-3">
-              <p className="eyebrow">Partners y patrocinadores</p>
               <h2 className="text-3xl font-semibold text-ink">
-                Construimos alianzas estratégicas
+                Nuestros Partners y Patrocinadores
               </h2>
             </div>
-            <p className="text-ink/70 md:max-w-md">
-              Colaboramos con instituciones, corporates y redes de inversión para
-              ampliar el alcance de cada club.
-            </p>
           </div>
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {partners.map((item) => (
@@ -449,11 +406,11 @@ export default function HomePage() {
         <div className="container-wide">
           <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <div className="space-y-3">
-              <p className="eyebrow text-sand/70">Noticias destacadas</p>
-              <h2 className="text-3xl font-semibold">Sigue de cerca nuestro día a día</h2>
+              <h2 className="text-3xl font-semibold">Noticias destacadas</h2>
               <p className="text-sand/80">
-                Jornadas, nuevos clubs, colaboraciones y los hitos más relevantes de
-                nuestra actividad.
+                Sigue de cerca nuestro día a día de: jornadas, nuevos clubes,
+                colaboraciones y los hitos más relevantes de nuestra actividad.
+                Mantente al tanto de todo lo que impulsa nuestra comunidad.
               </p>
             </div>
           </div>
@@ -480,7 +437,7 @@ export default function HomePage() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Ver más →
+                  Ver más
                 </a>
               </article>
             ))}
@@ -493,13 +450,11 @@ export default function HomePage() {
         <div className="animated-orb delay h-56 w-56 bg-teal/15 right-4 top-4" />
         <div className="container-wide relative grid gap-10 lg:grid-cols-[0.95fr_1.05fr]">
           <div className="space-y-4">
-            <p className="eyebrow">¿Quieres saber cómo funciona?</p>
-            <h2 className="text-3xl font-semibold text-ink">
-              Agenda una llamada con nuestro equipo
-            </h2>
+            <h2 className="text-3xl font-semibold text-ink">¿Quieres saber cómo funciona?</h2>
             <p className="text-ink/70">
-              Escríbenos para conocer más sobre cómo crear un Club de Business Angels
-              en tu región. Estaremos encantados de estudiar tu caso.
+              Escríbenos para agendar una llamada con un miembro de nuestro equipo y
+              estaremos encantados de darte más información y estudiar tu caso concreto
+              para ayudarte a crear un Club de Business Angels en tu región.
             </p>
             <div className="rounded-2xl border border-ink/10 bg-white p-6">
               <p className="text-sm font-semibold text-ink">Contáctanos</p>
@@ -511,7 +466,7 @@ export default function HomePage() {
                 target="_blank"
                 rel="noreferrer"
               >
-                LinkedIn
+                Seguir
               </a>
             </div>
           </div>

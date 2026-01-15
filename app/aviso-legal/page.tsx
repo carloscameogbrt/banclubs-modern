@@ -40,12 +40,7 @@ export default function AvisoLegalPage() {
 
       <section className="section hero-surface">
         <div className="container-wide space-y-4">
-          <p className="eyebrow">Textos legales</p>
-          <h1 className="text-4xl font-semibold text-ink md:text-5xl">Aviso Legal</h1>
-          <p className="text-ink/70">
-            Información sobre el acceso, navegación y utilización del sitio web de
-            BAnCLUBS.
-          </p>
+          <h1 className="text-4xl font-semibold text-ink md:text-5xl">AVISO LEGAL</h1>
         </div>
       </section>
 

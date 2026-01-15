@@ -117,14 +117,9 @@ export default function PoliticaPrivacidadPage() {
 
       <section className="section hero-surface">
         <div className="container-wide space-y-4">
-          <p className="eyebrow">Textos legales</p>
           <h1 className="text-4xl font-semibold text-ink md:text-5xl">
-            Política de privacidad y protección de datos
+            POLÍTICA DE PRIVACIDAD Y PROTECCIÓN DE DATOS
           </h1>
-          <p className="text-ink/70">
-            Información sobre el tratamiento de los datos personales facilitados a
-            través del sitio web.
-          </p>
         </div>
       </section>
 

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import SiteFooter from "../components/SiteFooter";
 import SiteHeader from "../components/SiteHeader";
 
@@ -21,15 +20,9 @@ export default function EquipoPage() {
         <div className="animated-orb h-48 w-48 bg-gold/40 -left-10 top-6" />
         <div className="animated-orb delay h-64 w-64 bg-teal/20 right-10 top-24" />
         <div className="container-wide relative space-y-6">
-          <p className="eyebrow">Sobre nosotros</p>
           <h1 className="text-4xl font-semibold leading-tight text-ink md:text-5xl">
-            Equipo fundador con experiencia en inversión y gestión de clubs
+            Sobre Nosotros
           </h1>
-          <p className="max-w-3xl text-lg text-ink/70">
-            Contribuimos al fortalecimiento del ecosistema emprendedor-inversor
-            español fomentando la creación y la óptima llevanza de clubs de inversión
-            en startups en fases tempranas.
-          </p>
         </div>
       </section>
 
@@ -65,17 +58,8 @@ export default function EquipoPage() {
 
       <section className="section bg-white/60">
         <div className="container-wide">
-          <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-            <div className="space-y-3">
-              <p className="eyebrow">Equipo fundador</p>
-              <h2 className="text-3xl font-semibold text-ink">
-                Un equipo comprometido con la excelencia operativa
-              </h2>
-            </div>
-            <p className="text-ink/70 md:max-w-md">
-              Experiencia en inversión, tecnología y finanzas para acompañar la
-              creación y gestión de clubs de business angels.
-            </p>
+          <div className="space-y-3">
+            <h2 className="text-3xl font-semibold text-ink">Equipo Fundador</h2>
           </div>
           <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {founders.map((member) => (
@@ -94,20 +78,12 @@ export default function EquipoPage() {
       <section className="section pattern-surface">
         <div className="container-wide grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div className="space-y-4">
-            <p className="eyebrow">¿Quieres saber más?</p>
-            <h2 className="text-3xl font-semibold text-ink">
-              Agenda una llamada con nuestro equipo gestor
-            </h2>
+            <h2 className="text-3xl font-semibold text-ink">¿Quieres saber más?</h2>
             <p className="text-ink/70">
-              Estaremos encantados de darte más información y estudiar tu caso
-              concreto para ofrecerte una propuesta personalizada.
+              Escríbenos para agendar una llamada con un miembro de nuestro equipo
+              gestor y estaremos encantados de darte más información y estudiar tu
+              caso concreto para ofrecerte una propuesta personalizada.
             </p>
-            <Link
-              className="inline-flex rounded-full bg-ink px-6 py-3 text-sm font-semibold text-sand transition hover:bg-ink/90"
-              href="/#contacto"
-            >
-              Ir al formulario de contacto
-            </Link>
           </div>
           <div className="rounded-3xl border border-ink/10 bg-white p-8 shadow-card">
             <p className="text-sm font-semibold text-ink">Contáctanos</p>
@@ -119,7 +95,7 @@ export default function EquipoPage() {
               target="_blank"
               rel="noreferrer"
             >
-              LinkedIn
+              Seguir
             </a>
           </div>
         </div>

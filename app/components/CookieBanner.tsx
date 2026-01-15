@@ -29,9 +29,9 @@ export default function CookieBanner() {
       <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
         <p className="text-xs text-ink/70">
           Utilizamos cookies para ofrecerte la mejor experiencia en nuestra web.
-          Puedes aprender más en la{" "}
+          Puedes aprender más sobre qué cookies utilizamos o desactivarlas en los{" "}
           <a className="underline" href="/politica-de-cookies">
-            Política de Cookies
+            ajustes
           </a>
           .
         </p>
