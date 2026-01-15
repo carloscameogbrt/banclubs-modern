@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-ink: 44 58 67;
+  --color-sand: 246 246 242;
+  --color-gold: 158 165 163;
+  --color-teal: 45 59 68;
+  color-scheme: light;
+}
+
+body {
+  @apply bg-sand text-ink;
+  font-feature-settings: "ss01" 1, "cv01" 1;
+}
+
+.container-wide {
+  @apply mx-auto w-full max-w-6xl px-6;
+}
+
+.section {
+  @apply py-16 md:py-24;
+}
+
+.eyebrow {
+  @apply text-xs uppercase tracking-[0.3em] text-ink/60;
+}
+
+.glass-card {
+  background: linear-gradient(140deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(11, 26, 51, 0.08);
+}
+
+.hero-surface {
+  background: radial-gradient(circle at top right, rgba(158, 165, 163, 0.25), transparent 45%),
+    radial-gradient(circle at 10% 20%, rgba(45, 59, 68, 0.18), transparent 55%),
+    linear-gradient(135deg, rgba(246, 246, 242, 0.95), rgba(246, 246, 242, 0.6));
+}
+
+.pattern-surface {
+  background: radial-gradient(circle at top left, rgba(158, 165, 163, 0.2), transparent 45%),
+    radial-gradient(circle at 90% 20%, rgba(45, 59, 68, 0.12), transparent 55%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(246, 246, 242, 0.7));
+}
+
+.pattern-surface-dark {
+  background: radial-gradient(circle at 20% 20%, rgba(158, 165, 163, 0.15), transparent 45%),
+    radial-gradient(circle at 80% 10%, rgba(255, 255, 255, 0.06), transparent 55%),
+    linear-gradient(135deg, rgba(45, 59, 68, 1), rgba(35, 48, 58, 1));
+}
+
+.animated-orb {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(1px);
+  opacity: 0.6;
+  animation: float 10s ease-in-out infinite;
+}
+
+.animated-orb.delay {
+  animation-delay: 2s;
+}
+
+.animated-orb.slow {
+  animation-duration: 14s;
+}
+
+.fade-up {
+  animation: fadeUp 1s ease forwards;
+}
+
+.float-slow {
+  animation: float 8s ease-in-out infinite;
+}
+
+.drift {
+  animation: drift 16s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(10px, -12px);
+  }
+}
