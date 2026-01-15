@@ -23,10 +23,10 @@ const focusItems = [
 ];
 
 const numbers = [
-  { label: "M€ Invertidos", value: "15" },
-  { label: "Empresas Financiadas", value: "400" },
-  { label: "Clubes Creados y Gestionados", value: "6" },
-  { label: "Años de Experiencia gestionando clubes de inversión", value: "12" }
+  { label: "M€ invertidos", value: "15" },
+  { label: "Empresas", value: "400" },
+  { label: "Clubes", value: "6" },
+  { label: "Años de experiencia", value: "12" }
 ];
 
 const news = [
@@ -276,17 +276,16 @@ export default function HomePage() {
               forma directa o indirecta a través de vehículos de inversión a más de 400
               inversiones y hemos gestionado múltiples proyectos de base tecnológica.
             </p>
-            <p className="text-ink/70">
+          </div>
+          <div className="rounded-3xl bg-ink p-8 text-sand shadow-soft">
+            <h3 className="text-xl font-semibold text-sand">¿Qué nos avala?</h3>
+            <p className="mt-3 text-sand/80">
               La combinación de experiencia, presencia en el ecosistema, procesos,
               tecnología y conocimiento financiero asegura nuestra capacidad de entregar
               servicios de calidad y de responder a la ambición de convertirnos en un
               agente dinamizador y de referencia dentro del ecosistema
               emprendedor-inversor nacional.
             </p>
-          </div>
-          <div className="rounded-3xl bg-ink p-8 text-sand shadow-soft">
-            <h3 className="text-xl font-semibold text-sand">¿Qué nos avala?</h3>
-            <p className="mt-3 text-sand/80">Nuestra experiencia en la gestión de clubs de inversión:</p>
             <a
               className="mt-6 inline-flex rounded-full border border-sand/40 px-5 py-2 text-sm font-semibold text-sand transition hover:border-sand/80"
               href="/equipo"
@@ -326,6 +325,10 @@ export default function HomePage() {
                 hemos atesorado, no solo una experiencia incalculable, sino unos
                 resultados por encima de la media.
               </p>
+              <p className="text-sand/80">
+                Nuestra experiencia en la gestión de clubs de inversión se refleja en
+                estos indicadores.
+              </p>
             </div>
           </div>
           <div className="mt-10 grid gap-6 md:grid-cols-4">
@@ -346,6 +349,13 @@ export default function HomePage() {
         <div className="container-wide grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="space-y-4">
             <h2 className="text-3xl font-semibold text-ink">Algunas de nuestras inversiones</h2>
+            <p className="text-ink/70">
+              Estamos expuestos de forma directa o indirecta a través de vehículos de
+              inversión a más de 400 inversiones.
+            </p>
+            <p className="text-ink/70">
+              Hemos gestionado múltiples proyectos de base tecnológica.
+            </p>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             {investments.map((item) => (

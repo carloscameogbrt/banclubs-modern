@@ -6,14 +6,16 @@ export default function SiteHeader() {
     <header className="border-b border-ink/10 bg-sand/80 backdrop-blur">
       <div className="container-wide flex items-center justify-between py-5">
         <Link className="flex items-center gap-4" href="/">
-          <Image
-            src="/banclubs-logo.png"
-            alt="BAnCLUBS"
-            width={220}
-            height={56}
-            className="h-12 w-auto"
-            priority
-          />
+          <span className="rounded-xl bg-white/70 px-2 py-1 shadow-sm">
+            <Image
+              src="/banclubs-logo.png"
+              alt="BAnCLUBS"
+              width={260}
+              height={64}
+              className="h-14 w-auto rounded-lg"
+              priority
+            />
+          </span>
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-medium text-ink/70 lg:flex">
           <Link className="hover:text-ink" href="/#inicio">

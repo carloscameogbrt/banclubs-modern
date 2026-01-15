@@ -1,12 +1,33 @@
+import Image from "next/image";
 import SiteFooter from "../components/SiteFooter";
 import SiteHeader from "../components/SiteHeader";
 
 const founders = [
-  { name: "Nacho Alonso", role: "Cofundador y Presidente" },
-  { name: "Guillermo Soto", role: "Cofundador" },
-  { name: "Andrea Alonso-Bernaola", role: "CEO" },
-  { name: "Alejandro Soto", role: "CFO/Analista de Inversiones" },
-  { name: "Carlos Cameo", role: "CTO/Consejero de Tecnología" }
+  {
+    name: "Nacho Alonso",
+    role: "Cofundador y Presidente",
+    image: "/team/nacho-alonso.png"
+  },
+  {
+    name: "Guillermo Soto",
+    role: "Cofundador",
+    image: "/team/guillermo-soto.png"
+  },
+  {
+    name: "Andrea Alonso-Bernaola",
+    role: "CEO",
+    image: "/team/andrea-alonso.png"
+  },
+  {
+    name: "Alejandro Soto",
+    role: "CFO/Analista de Inversiones",
+    image: "/team/alejandro-soto.png"
+  },
+  {
+    name: "Carlos Cameo",
+    role: "CTO/Consejero de Tecnología",
+    image: "/team/carlos-cameo.png"
+  }
 ];
 
 const values = ["Integridad", "Colaboración", "Rigor", "Transparencia"];
@@ -65,10 +86,21 @@ export default function EquipoPage() {
             {founders.map((member) => (
               <div
                 key={member.name}
-                className="rounded-2xl bg-white p-6 shadow-card transition hover:-translate-y-1"
+                className="overflow-hidden rounded-2xl bg-white shadow-card transition hover:-translate-y-1"
               >
-                <p className="text-lg font-semibold text-ink">{member.name}</p>
-                <p className="mt-2 text-sm text-ink/70">{member.role}</p>
+                <div className="h-56 w-full bg-sand">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    width={480}
+                    height={360}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <p className="text-lg font-semibold text-ink">{member.name}</p>
+                  <p className="mt-2 text-sm text-ink/70">{member.role}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -87,7 +119,7 @@ export default function EquipoPage() {
           </div>
           <div className="rounded-3xl border border-ink/10 bg-white p-8 shadow-card">
             <p className="text-sm font-semibold text-ink">Contáctanos</p>
-            <p className="mt-2 text-sm text-ink/70">contacto@banclubs.com</p>
+            <p className="mt-2 text-sm text-ink/70">partners@banclubs.com</p>
             <p className="mt-4 text-sm font-semibold text-ink">Síguenos</p>
             <a
               className="mt-2 block text-sm text-ink/70"

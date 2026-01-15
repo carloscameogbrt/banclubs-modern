@@ -10,6 +10,10 @@
   color-scheme: light;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @apply bg-sand text-ink;
   font-feature-settings: "ss01" 1, "cv01" 1;

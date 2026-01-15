@@ -88,8 +88,7 @@ export default function ContactForm() {
           Deseo recibir comunicaciones comerciales sobre servicios de BANCLUBS.
         </label>
       </div>
-      <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
-        <span className="text-xs text-ink/60">6 + 4 =</span>
+      <div className="mt-6 flex flex-wrap items-center justify-end gap-3">
         <button
           className="rounded-full bg-ink px-6 py-3 text-sm font-semibold text-sand transition hover:bg-ink/90 disabled:cursor-not-allowed disabled:opacity-70"
           type="submit"

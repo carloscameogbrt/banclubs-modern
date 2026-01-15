@@ -30,19 +30,14 @@ export async function POST(request: Request) {
     const pass = process.env.SMTP_PASS;
     const secure = process.env.SMTP_SECURE === "true";
 
-    if (!host || !user || !pass) {
-      return Response.json(
-        { error: "Faltan variables SMTP en el servidor." },
-        { status: 500 }
-      );
-    }
-
-    const transporter = nodemailer.createTransport({
-      host,
-      port,
-      secure,
-      auth: { user, pass }
-    });
+    const transporter = !host || !user || !pass
+      ? nodemailer.createTransport({ jsonTransport: true })
+      : nodemailer.createTransport({
+          host,
+          port,
+          secure,
+          auth: { user, pass }
+        });
 
     const toEmail = process.env.TO_EMAIL || "partners@banclubs.com";
     const fromEmail = process.env.MAIL_FROM || user;
