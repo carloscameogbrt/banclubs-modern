@@ -318,9 +318,7 @@ export default function HomePage() {
             </p>
             <a
               className="mt-6 inline-flex rounded-full border border-sand/40 px-5 py-2 text-sm font-semibold text-sand transition hover:border-sand/80"
-              href="https://banclubs.com/equipo/"
-              target="_blank"
-              rel="noreferrer"
+              href="/equipo"
             >
               Ver más
             </a>
