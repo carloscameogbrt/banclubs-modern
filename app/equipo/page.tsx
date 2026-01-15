@@ -119,7 +119,7 @@ export default function EquipoPage() {
           </div>
           <div className="rounded-3xl border border-ink/10 bg-white p-8 shadow-card">
             <p className="text-sm font-semibold text-ink">Contáctanos</p>
-            <p className="mt-2 text-sm text-ink/70">partners@banclubs.com</p>
+            <p className="mt-2 text-sm text-ink/70">contacto@banclubs.com</p>
             <p className="mt-4 text-sm font-semibold text-ink">Síguenos</p>
             <a
               className="mt-2 block text-sm text-ink/70"
