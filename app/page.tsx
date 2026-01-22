@@ -88,7 +88,8 @@ const clubLogos = [
   {
     name: "Invision Club Deal",
     src: "/clients/invision-club-deal.png",
-    href: "https://www.linkedin.com/posts/banclubs_el-invision-club-deal-se-presenta-y-prepara-activity-7356391270828621826-JTW0"
+    href: "https://www.linkedin.com/posts/banclubs_el-invision-club-deal-se-presenta-y-prepara-activity-7356391270828621826-JTW0",
+    className: "h-12"
   },
   {
     name: "Core Angels Madrid",
@@ -232,7 +233,7 @@ export default function HomePage() {
       </section>
 
       <section id="que-hacemos" className="section bg-white/60 pattern-surface">
-        <div className="container-wide grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-start">
+        <div className="container-wide space-y-10">
           <div className="space-y-4">
             <p className="eyebrow">Qué hacemos</p>
             <h2 className="text-3xl font-semibold text-ink">
@@ -249,7 +250,7 @@ export default function HomePage() {
               atractivos a los inversores.
             </p>
           </div>
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {focusItems.map((item) => (
               <div
                 key={item.title}
@@ -352,7 +353,7 @@ export default function HomePage() {
                 alt={logo.name}
                 width={160}
                 height={64}
-                className="h-10 w-auto object-contain"
+                className={`${logo.className ?? "h-10"} w-auto object-contain`}
               />
             </a>
           ))}
