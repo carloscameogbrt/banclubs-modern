@@ -57,15 +57,15 @@ export default function EquipoPage() {
           <div className="space-y-4">
             <p className="eyebrow">Misión</p>
             <p className="text-ink/70">
-              Contribuir al fortalecimiento y desarrollo del ecosistema
-              emprendedor-inversor español fomentando la creación y facilitando la
-              óptima llevanza de clubs de inversión en startups en fases tempranas.
+              Generar prosperidad impulsando el emprendimiento innovador a través de la
+              creación y llevanza profesionalizada de clubs de inversión en startups en
+              fases tempranas.
             </p>
             <p className="eyebrow pt-6">Visión</p>
             <p className="text-ink/70">
               Convertirnos en referente y principal catalizador de la proliferación
               de clubs de business angels a partir de la prestación de servicios
-              profesionales reconocidos en el ecosistema por su calidad e impacto.
+              profesionales reconocidos por su calidad, retornos e impacto.
             </p>
           </div>
           <div className="rounded-3xl bg-ink p-8 text-sand shadow-soft">

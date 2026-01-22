@@ -6,26 +6,31 @@ import SiteHeader from "./components/SiteHeader";
 
 const focusItems = [
   {
-    title: "Divulgar la inversión en startups",
+    title: "Divulgamos",
     description:
       "Impulsamos los clubs como un complemento diversificador en las carteras de los ahorradores privados."
   },
   {
-    title: "Formar en técnicas y herramientas",
+    title: "Formamos",
     description: "Transferimos metodologías profesionales para analizar, invertir y acompañar proyectos."
   },
   {
-    title: "Crear y llevar clubs de inversión",
+    title: "Creamos y llevamos",
     description:
-      "Procesos eficientes compatibles con portfolio único, pledge fund, SPV u otros modelos."
+      "Utilizamos procesos rigurosos y eficientes, apoyados en tecnología de última generación, compatibles con portfolio único, pledge fund, SPV y otros modelos de inversión."
+  },
+  {
+    title: "Activamos la participación voluntaria de los Socios",
+    description:
+      "Aseguramos que los miembros de los clubs se impliquen de forma voluntaria en actividades clave como la toma de decisiones de inversión, la estrategia o el apoyo a las participadas."
   }
 ];
 
 const numbers = [
-  { label: "M€ invertidos", value: "15" },
+  { label: "M€ invertidos", value: "16" },
   { label: "Empresas financiadas", value: "400" },
-  { label: "Clubes creados y llevados", value: "6" },
-  { label: "Años de experiencia", value: "12" }
+  { label: "Clubes creados y llevados", value: "7" },
+  { label: "Años de experiencia", value: "13" }
 ];
 
 const news = [
@@ -79,6 +84,11 @@ const clubLogos = [
     name: "The BANC",
     src: "/clients/pinama-1.png",
     href: "https://thebanc.io/"
+  },
+  {
+    name: "Invision Club Deal",
+    src: "/clients/invision-club-deal.png",
+    href: "https://www.linkedin.com/posts/banclubs_el-invision-club-deal-se-presenta-y-prepara-activity-7356391270828621826-JTW0"
   },
   {
     name: "Core Angels Madrid",
@@ -154,7 +164,7 @@ export default function HomePage() {
         <div className="animated-orb slow h-40 w-40 bg-ink/10 left-1/2 bottom-10" />
         <div className="container-wide relative grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div className="space-y-6">
-            <p className="eyebrow">Impulsa la innovación en tu territorio</p>
+            <p className="eyebrow">PROSPERIDAD A TRAVÉS DE LA INNOVACIÓN</p>
             <h1 className="text-4xl font-semibold leading-tight text-ink md:text-5xl">
               Impulsa la innovación en tu territorio creando un Club de Business Angels con
               nosotros
@@ -226,18 +236,20 @@ export default function HomePage() {
           <div className="space-y-4">
             <p className="eyebrow">Qué hacemos</p>
             <h2 className="text-3xl font-semibold text-ink">
-              Optimizamos los procesos administrativos de los clubs de inversión en startups
+              Generamos prosperidad creando experiencias de inversión únicas a partir de un
+              modelo colaborativo y profesionalizado
             </h2>
             <p className="text-ink/70">
               Prestamos servicios administrativos especializados para todas las fases del
               ciclo de vida de los clubs, desde su constitución hasta su liquidación.
             </p>
             <p className="text-ink/70">
-              Nuestro objetivo es mitigar riesgos, maximizar retornos y asegurar un impacto
-              económico y social medible en cada territorio.
+              Nuestro objetivo es contribuir a crear prosperidad en los diferentes
+              territorios generando, al mismo tiempo, retornos emocionales y financieros
+              atractivos a los inversores.
             </p>
           </div>
-          <div className="grid gap-6 sm:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {focusItems.map((item) => (
               <div
                 key={item.title}
@@ -252,12 +264,23 @@ export default function HomePage() {
       </section>
 
       <section className="section">
-        <div className="container-wide grid gap-12 lg:grid-cols-[1.05fr_0.95fr]">
-          <div className="space-y-6">
+        <div className="container-wide">
+          <div className="max-w-3xl space-y-6">
             <p className="eyebrow">Cómo lo hacemos</p>
             <h2 className="text-3xl font-semibold text-ink">
-              Talento compartido, procesos eficientes y tecnología propia
+              Valores sólidos, amplia experiencia, talento compartido, procesos eficientes y
+              tecnología avanzada
             </h2>
+            <p className="text-ink/70">
+              Trabajamos con la integridad, la transparencia, el rigor y la colaboración como
+              pilares de nuestras decisiones y actuaciones.
+            </p>
+            <p className="text-ink/70">
+              Aplicamos nuestra experiencia de más de 13 años invirtiendo 16 millones de euros
+              en más de 400 startups a todas las actividades de nuestros clubs, incluyendo el
+              acceso a las mejores oportunidades de inversión por la presencia que mantenemos
+              en el ecosistema innovador y nuestra sólida red de contactos.
+            </p>
             <p className="text-ink/70">
               Compartimos el talento de nuestro equipo de especialistas entre los diferentes
               clubs que llevamos, garantizando la confidencialidad y evitando conflictos de
@@ -265,24 +288,12 @@ export default function HomePage() {
             </p>
             <p className="text-ink/70">
               Seguimos con rigor procesos eficientes probados en múltiples clubs de inversión
-              exitosos y apoyados por una plataforma tecnológica que reduce costes y errores.
+              exitosos.
             </p>
-          </div>
-          <div className="rounded-3xl border border-ink/10 bg-white p-8 shadow-soft transition hover:-translate-y-1">
-            <p className="text-sm uppercase tracking-[0.25em] text-ink/60">
-              Nuestro foco
+            <p className="text-ink/70">
+              Utilizamos tecnología avanzada para optimizar los resultados de cada uno de los
+              clubs.
             </p>
-            <div className="mt-6 space-y-6">
-              {focusItems.map((item) => (
-                <div key={item.title} className="flex gap-4">
-                  <span className="mt-1 h-2 w-2 rounded-full bg-teal" />
-                  <div>
-                    <p className="font-semibold text-ink">{item.title}</p>
-                    <p className="text-sm text-ink/70">{item.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
@@ -292,24 +303,27 @@ export default function HomePage() {
           <div className="space-y-4">
             <p className="eyebrow">Sobre nosotros</p>
             <h2 className="text-3xl font-semibold text-ink">
-              Experiencia real en inversión, acompañamiento y llevanza de clubs
+              Experiencia real, inversión en startups, apoyo a empresas participadas y
+              llevanza de clubs
             </h2>
             <p className="text-ink/70">
               Contamos con una dilatada trayectoria en la inversión y acompañamiento de
               startups, y en la llevanza de clubs de business angels.
             </p>
             <p className="text-ink/70">
-              Estamos expuestos directa o indirectamente a más de 400 inversiones y hemos
-              llevado múltiples proyectos de base tecnológica.
+              Estamos expuestos directa o indirectamente a través de clubs de inversión y
+              fondos de capital riesgo a más de 400 inversiones y hemos llevado múltiples
+              proyectos de base tecnológica.
             </p>
           </div>
           <div className="rounded-3xl bg-ink p-8 text-sand shadow-soft">
             <h3 className="text-xl font-semibold text-sand">¿Qué nos avala?</h3>
             <p className="mt-3 text-sand/80">
               La combinación de experiencia, presencia en el ecosistema, procesos,
-              tecnología y conocimiento financiero nos permite entregar servicios de
-              calidad y responder a la ambición de convertirnos en un agente dinamizador
-              del ecosistema emprendedor-inversor nacional.
+              tecnología y conocimiento financiero asegura nuestra capacidad de entregar
+              servicios de calidad y de responder a la ambición de convertirnos en un
+              agente dinamizador y de referencia dentro del ecosistema emprendedor-inversor
+              nacional.
             </p>
             <a
               className="mt-6 inline-flex rounded-full border border-sand/40 px-5 py-2 text-sm font-semibold text-sand transition hover:border-sand/80"
