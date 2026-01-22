@@ -232,7 +232,7 @@ export default function HomePage() {
       </section>
 
       <section id="que-hacemos" className="section bg-white/60 pattern-surface">
-        <div className="container-wide grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+        <div className="container-wide grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-start">
           <div className="space-y-4">
             <p className="eyebrow">Qué hacemos</p>
             <h2 className="text-3xl font-semibold text-ink">
@@ -249,11 +249,11 @@ export default function HomePage() {
               atractivos a los inversores.
             </p>
           </div>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
             {focusItems.map((item) => (
               <div
                 key={item.title}
-                className="glass-card rounded-2xl bg-sand p-6 shadow-card transition hover:-translate-y-1 hover:shadow-soft"
+                className="glass-card flex h-full flex-col rounded-3xl bg-white/80 p-5 shadow-card transition hover:-translate-y-1 hover:shadow-soft"
               >
                 <h3 className="text-lg font-semibold text-ink">{item.title}</h3>
                 <p className="mt-3 text-sm text-ink/70">{item.description}</p>
@@ -264,8 +264,8 @@ export default function HomePage() {
       </section>
 
       <section className="section">
-        <div className="container-wide">
-          <div className="max-w-3xl space-y-6">
+        <div className="container-wide grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+          <div className="space-y-6">
             <p className="eyebrow">Cómo lo hacemos</p>
             <h2 className="text-3xl font-semibold text-ink">
               Valores sólidos, amplia experiencia, talento compartido, procesos eficientes y
@@ -281,19 +281,24 @@ export default function HomePage() {
               acceso a las mejores oportunidades de inversión por la presencia que mantenemos
               en el ecosistema innovador y nuestra sólida red de contactos.
             </p>
-            <p className="text-ink/70">
-              Compartimos el talento de nuestro equipo de especialistas entre los diferentes
-              clubs que llevamos, garantizando la confidencialidad y evitando conflictos de
-              interés.
-            </p>
-            <p className="text-ink/70">
-              Seguimos con rigor procesos eficientes probados en múltiples clubs de inversión
-              exitosos.
-            </p>
-            <p className="text-ink/70">
-              Utilizamos tecnología avanzada para optimizar los resultados de cada uno de los
-              clubs.
-            </p>
+          </div>
+          <div className="glass-card rounded-3xl bg-white/80 p-6 shadow-card">
+            <p className="text-sm uppercase tracking-[0.25em] text-ink/60">Talento y procesos</p>
+            <div className="mt-6 space-y-4 text-ink/70">
+              <p>
+                Compartimos el talento de nuestro equipo de especialistas entre los
+                diferentes clubs que llevamos, garantizando la confidencialidad y evitando
+                conflictos de interés.
+              </p>
+              <p>
+                Seguimos con rigor procesos eficientes probados en múltiples clubs de
+                inversión exitosos.
+              </p>
+              <p>
+                Utilizamos tecnología avanzada para optimizar los resultados de cada uno de
+                los clubs.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -333,11 +338,11 @@ export default function HomePage() {
             </a>
           </div>
         </div>
-        <div className="container-wide mt-12 grid gap-4 sm:grid-cols-3 lg:grid-cols-6">
+        <div className="container-wide mt-12 grid gap-4 sm:grid-cols-3 lg:grid-cols-7">
           {clubLogos.map((logo) => (
             <a
               key={logo.name}
-              className="flex items-center justify-center rounded-2xl border border-ink/10 bg-white p-4 transition hover:-translate-y-1 hover:shadow-soft"
+              className="flex items-center justify-center rounded-2xl border border-ink/10 bg-white/90 p-4 shadow-card transition hover:-translate-y-1 hover:shadow-soft"
               href={logo.href}
               target="_blank"
               rel="noreferrer"
