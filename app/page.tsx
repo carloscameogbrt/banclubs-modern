@@ -87,7 +87,7 @@ const clubLogos = [
   },
   {
     name: "Invision Club Deal",
-    src: "/clients/invision-club-deal.png",
+    src: "/clients/invision_logo.png",
     href: "https://www.linkedin.com/posts/banclubs_el-invision-club-deal-se-presenta-y-prepara-activity-7356391270828621826-JTW0",
     className: "h-14"
   },
