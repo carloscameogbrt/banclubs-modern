@@ -89,7 +89,7 @@ const clubLogos = [
     name: "Invision Club Deal",
     src: "/clients/invision-club-deal.png",
     href: "https://www.linkedin.com/posts/banclubs_el-invision-club-deal-se-presenta-y-prepara-activity-7356391270828621826-JTW0",
-    className: "h-12"
+    className: "h-14"
   },
   {
     name: "Core Angels Madrid",
@@ -128,6 +128,11 @@ const investments = [
     name: "Singularu",
     src: "/investments/singularu.jpg",
     href: "https://singularu.com/"
+  },
+  {
+    name: "Zepo",
+    src: "/investments/zepo.png",
+    href: "https://zepo.ai/"
   }
 ];
 
@@ -225,7 +230,7 @@ export default function HomePage() {
               </div>
               <div className="flex items-start gap-3">
                 <span className="mt-1 h-2 w-2 rounded-full bg-gold" />
-                <p>Equipo profesional con años de experiencia.</p>
+                <p>Equipo especializado con 40 años de experiencia acumulada.</p>
               </div>
             </div>
           </div>
@@ -245,7 +250,7 @@ export default function HomePage() {
               ciclo de vida de los clubs, desde su constitución hasta su liquidación.
             </p>
             <p className="text-ink/70">
-              Nuestro objetivo es contribuir a crear prosperidad en los diferentes
+              Nuestro objetivo es contribuir al desarrollo económico en los diferentes
               territorios generando, al mismo tiempo, retornos emocionales y financieros
               atractivos a los inversores.
             </p>
@@ -287,7 +292,7 @@ export default function HomePage() {
             <p className="text-sm uppercase tracking-[0.25em] text-ink/60">Talento y procesos</p>
             <div className="mt-6 space-y-4 text-ink/70">
               <p>
-                Compartimos el talento de nuestro equipo de especialistas entre los
+                Compartimos el talento de nuestro equipo de cinco especialistas entre los
                 diferentes clubs que llevamos, garantizando la confidencialidad y evitando
                 conflictos de interés.
               </p>
@@ -296,8 +301,9 @@ export default function HomePage() {
                 inversión exitosos.
               </p>
               <p>
-                Utilizamos tecnología avanzada para optimizar los resultados de cada uno de
-                los clubs.
+                Utilizamos tecnología avanzada para garantizar el rigor y la efectividad de
+                nuestros procesos impactando de forma positiva en los resultados de cada uno
+                de los clubs.
               </p>
             </div>
           </div>
@@ -364,7 +370,7 @@ export default function HomePage() {
         <div className="container-wide">
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div className="space-y-3">
-              <p className="eyebrow text-sand/70">Nuestros números</p>
+              <p className="eyebrow text-white">NUESTROS NÚMEROS</p>
               <h2 className="text-3xl font-semibold text-sand">Resultados por encima de la media</h2>
               <p className="text-sand/80">
                 Una trayectoria sólida con impacto en el ecosistema emprendedor.
@@ -399,7 +405,7 @@ export default function HomePage() {
             {investments.map((item) => (
               <a
                 key={item.name}
-                className="flex items-center justify-between rounded-2xl border border-ink/10 bg-sand p-5 transition hover:-translate-y-1 hover:shadow-soft"
+                className="flex items-center justify-between rounded-2xl border border-ink/10 bg-white p-5 transition hover:-translate-y-1 hover:shadow-soft"
                 href={item.href}
                 target="_blank"
                 rel="noreferrer"
@@ -409,7 +415,7 @@ export default function HomePage() {
                   alt={item.name}
                   width={180}
                   height={64}
-                  className="h-9 w-auto object-contain"
+                  className="h-9 w-auto object-contain mix-blend-multiply"
                 />
                 <span className="text-xs text-ink/60">Ver más</span>
               </a>
