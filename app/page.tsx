@@ -29,7 +29,7 @@ const focusItems = [
 const numbers = [
   { label: "M€ invertidos", value: "16" },
   { label: "Empresas financiadas", value: "400" },
-  { label: "Clubes creados y llevados", value: "7" },
+  { label: "Clubes creados y operados", value: "7" },
   { label: "Años de experiencia", value: "13" }
 ];
 
