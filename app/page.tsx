@@ -42,6 +42,14 @@ const news = [
     href: "https://www.linkedin.com/posts/banclubs_granada-granada-innvierte-activity-7402652863027482624-MBNk"
   },
   {
+    image: "/news/nazari.png",
+    title: "Nazarí Ventures inicia su actividad",
+    date: "05 mar 2026",
+    description:
+      "Reunión de puesta en marcha en Granada con sesión formativa y primera simulación de comité.",
+    href: "https://www.linkedin.com/posts/nazar%C3%AD-ventures_granada-startups-ugcPost-7436733932295000064-PQhq/"
+  },
+  {
     image: "/news/oeca.png",
     title: "Jornada OECA – Inversión en startups",
     date: "17 nov 2025",
@@ -61,6 +69,14 @@ const news = [
     date: "30 jul 2025",
     description: "El primer club de inversión en startups con impacto positivo en Baleares.",
     href: "https://www.linkedin.com/posts/banclubs_el-invision-club-deal-se-presenta-y-prepara-activity-7356391270828621826-JTW0"
+  },
+  {
+    image: "/news/invision.png",
+    title: "Onboarding inaugural de Invision Club Deal",
+    date: "06 mar 2026",
+    description:
+      "Primera sesión oficial en Mallorca con formación, marco estratégico y simulación de comité.",
+    href: "https://www.linkedin.com/posts/invision-club-deal_mallorca-baleares-invisionclubdeal-activity-7432803024835821568-9_s3/"
   }
 ];
 
