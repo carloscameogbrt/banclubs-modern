@@ -37,7 +37,7 @@ const news = [
   {
     image: "/news/invision-formacion.png",
     title: "Onboarding inaugural de Invision Club Deal",
-    date: "06 mar 2026",
+    date: "25 feb 2026",
     description:
       "Primera sesión oficial en Mallorca con formación, marco estratégico y simulación de comité.",
     href: "https://www.linkedin.com/posts/invision-club-deal_mallorca-baleares-invisionclubdeal-activity-7432803024835821568-9_s3/"
@@ -48,7 +48,7 @@ const news = [
     date: "05 mar 2026",
     description:
       "Reunión de puesta en marcha en Granada con sesión formativa y primera simulación de comité.",
-    href: "https://www.linkedin.com/posts/nazar%C3%AD-ventures_granada-startups-ugcPost-7436733932295000064-PQhq/"
+    href: "https://www.linkedin.com/posts/banclubs_granada-startups-activity-7436776557517635584-jS4N?utm_source=share&utm_medium=member_desktop&rcm=ACoAABt-bfQBPkllL1riLP02E3peIo-cCwcmYXc"
   },
   {
     image: "/news/nazari.png",
