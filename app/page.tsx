@@ -35,20 +35,20 @@ const numbers = [
 
 const news = [
   {
-    image: "/news/invision-formacion.png",
-    title: "Onboarding inaugural de Invision Club Deal",
-    date: "25 feb 2026",
-    description:
-      "Primera sesión oficial en Mallorca con formación, marco estratégico y simulación de comité.",
-    href: "https://www.linkedin.com/posts/invision-club-deal_mallorca-baleares-invisionclubdeal-activity-7432803024835821568-9_s3/"
-  },
-  {
     image: "/news/nazari-formacion.png",
     title: "Nazarí Ventures inicia su actividad",
     date: "05 mar 2026",
     description:
       "Reunión de puesta en marcha en Granada con sesión formativa y primera simulación de comité.",
     href: "https://www.linkedin.com/posts/banclubs_granada-startups-activity-7436776557517635584-jS4N?utm_source=share&utm_medium=member_desktop&rcm=ACoAABt-bfQBPkllL1riLP02E3peIo-cCwcmYXc"
+  },
+  {
+    image: "/news/invision-formacion.png",
+    title: "Onboarding inaugural de Invision Club Deal",
+    date: "25 feb 2026",
+    description:
+      "Primera sesión oficial en Mallorca con formación, marco estratégico y simulación de comité.",
+    href: "https://www.linkedin.com/posts/invision-club-deal_mallorca-baleares-invisionclubdeal-activity-7432803024835821568-9_s3/"
   },
   {
     image: "/news/nazari.png",
